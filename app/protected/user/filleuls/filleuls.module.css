@@ -1,0 +1,28 @@
+.tableContainer {
+  padding: 50px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tableContainer h1 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .test .tableContainer {
+    padding: 10px;
+  }
+  .test .tableContainer h1 {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=filleuls.module.css.map */

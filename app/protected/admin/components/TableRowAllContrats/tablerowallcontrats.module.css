@@ -1,0 +1,40 @@
+.pdf {
+  cursor: pointer;
+}
+
+.nopdf {
+  cursor: not-allowed;
+}
+
+.completed {
+  background-color: #5fcf66;
+  padding: 5px 12px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: whitesmoke;
+}
+
+.pending {
+  background-color: #dab648;
+  padding: 5px 12px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: whitesmoke;
+}
+
+.null {
+  background-color: #f56057;
+  padding: 5px 12px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: whitesmoke;
+}/*# sourceMappingURL=tablerowallcontrats.module.css.map */

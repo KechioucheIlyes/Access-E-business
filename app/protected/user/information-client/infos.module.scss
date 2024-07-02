@@ -1,0 +1,283 @@
+.inputGroup {
+    position: relative;
+    margin: 20px;
+    display: flex;
+
+
+}
+
+.inputGroupInput {
+    font: inherit;
+    color: #000;
+    padding: 13px;
+    border: none;
+    border-radius: 4px;
+    outline: 2px solid #000;
+    background-color: transparent;
+    transition: outline-color 500ms;
+    width: 100%;
+
+
+}
+
+.inputGroupInput.active,
+.inputGroupInput:is(:focus, :valid) {
+    outline-color: black;
+}
+
+.inputGroupLabel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    color: #000;
+    transition: transform 500ms, scale 500ms;
+
+
+
+}
+
+.inputGroupInput.active+.inputGroupLabel,
+.inputGroupInput:focus+.inputGroupLabel,
+.inputGroupInput:valid+.inputGroupLabel {
+    padding-inline: 1Opx;
+    transform: translate(10px, -14px) scale(0.8);
+    background-color: #f0f2f5;
+    color: black;
+}
+
+.inputGroupInput.active+.inputGroupLabel {
+    padding-inline: 1Opx;
+    transform: translate(10px, -14px) scale(0.8);
+    background-color: #f0f2f5;
+    color: black;
+}
+
+.champsSociete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px;
+
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.signataireSection {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.champsSignataire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50%;
+
+
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.section {
+    background-color: #f0f2f5;
+    margin: 0;
+    min-height: 100vh !important;
+
+    h1 {
+        color: #1a2529;
+        font-size: 25px;
+    }
+}
+
+
+
+.btn {
+    margin-top: 25px !important;
+    padding: 10px 42px !important;
+    border-radius: 10px !important;
+    background-color: #42bf96 !important;
+    border: none !important;
+    font-size: 15px !important;
+    cursor: pointer !important;
+    color: white !important;
+    width: 100%;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+
+    &:hover {
+        background-color: #338c6e !important;
+    }
+}
+
+.inputDate {
+    width: 100%;
+}
+
+.inputCivilite {
+    width: 100%;
+
+}
+
+.questionsRadio {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+    .radio {
+
+        display: flex;
+        width: 100%;
+
+
+        .fromControl {
+
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            .groupedRadio {
+
+                width: 50%;
+                display: flex !important;
+                flex-direction: row;
+                align-items: center !important;
+                justify-content: space-around;
+
+
+
+
+            }
+        }
+
+
+    }
+
+}
+
+.no {
+
+    margin: 0;
+
+}
+
+@media (max-width :767px) {
+
+    .imagesContainer {
+        display: none !important;
+    }
+
+    .champsSociete {
+
+        padding: 0px;
+
+        h1 {
+            font-size: 10px;
+        }
+    }
+
+    .inputGroupInput {
+        padding: 9px;
+
+        input {
+            font-size: 10px;
+            height: 30px;
+        }
+    }
+
+    .champsSignataire {
+        width: 100%;
+
+        h1 {
+            font-size: 10px;
+        }
+    }
+
+    .fromControl {
+
+
+        .groupedRadio {
+
+            width: 100% !important;
+
+        }
+    }
+}
+
+
+.parentContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+    
+    .imagesContainer {
+
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .imageSection {
+            width: 70%;
+
+
+            img {
+                height: auto;
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+.parentContainer2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    .imagesContainer {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .imageSection {
+            width: 70%;
+
+
+            img {
+                height: auto;
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+.back {
+
+
+    margin-left: 100px;
+
+}
+
+.bigDiv {}

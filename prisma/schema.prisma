@@ -1,0 +1,234 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             Int      @id @default(autoincrement())
+  create_time    DateTime @default(now())
+  name           String   @db.VarChar(255)
+  prenom         String   @db.VarChar(255)
+  email          String   @unique(map: "email") @db.VarChar(225)
+  numero         String   @db.VarChar(255)
+  raison_social  String   @db.VarChar(255)
+  fonction       String   @db.VarChar(255)
+  commentaire    String?  @db.Text
+  siren          String   @db.VarChar(225)
+  affiliation_id String?
+  affiliated_by  Int?
+  role           String   @default("user") @db.VarChar(255)
+  activated      Boolean? @default(false)
+  confirmed      Boolean? @default(false)
+  fix            String?  @db.VarChar(255)
+  modifier_le    DateTime @default(now())
+  refused        Boolean? @default(false)
+
+  authentication Authentication?
+  token_mail     token_mail[]
+  Commissions    Commissions[]
+  Clients        Clients[]
+  filleul        filleul[]
+}
+
+model Dirigeants {
+  id                Int     @id @default(autoincrement())
+  civilite          String  @db.Char(255)
+  nom               String  @db.VarChar(225)
+  prenom            String  @db.VarChar(225)
+  email             String  @db.VarChar(225)
+  mobile            String  @db.VarChar(225)
+  fixe              String  @db.VarChar(225)
+  fonction          String  @db.VarChar(225)
+  signataire        Boolean
+  decisionnaire     Boolean
+  signature_fichier String? @default("default") @db.VarChar(225)
+  ID_clients        Int
+  Clients           Clients @relation(fields: [ID_clients], references: [id])
+}
+
+model Authentication {
+  id          Int      @id @default(autoincrement())
+  userId      Int      @unique(map: "userId")
+  create_time DateTime @default(now())
+  password    String   @db.VarChar(255)
+  user        User     @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "authentication_ibfk_1")
+}
+
+model token_mail {
+  id          Int      @id @default(autoincrement())
+  create_time DateTime @default(now())
+  token       String?  @db.VarChar(255)
+  userId      Int?
+  User        User?    @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "token_mail_ibfk_1")
+
+  @@index([userId], map: "userId")
+}
+
+model Commissions {
+  id                          Int       @id @default(autoincrement())
+  reference                   String    @unique @db.VarChar(225)
+  courtage                    Boolean
+  TURP                        Boolean
+  CSPE                        Boolean
+  logiciel                    Boolean
+  GBT                         Boolean
+  Date_signature              DateTime
+  Date_signature_courtage     DateTime?
+  Date_signature_TURP         DateTime?
+  Date_signature_CSPE         DateTime?
+  Date_signature_logiciel     DateTime?
+  Date_signature_GBT          DateTime?
+  montant_commission_total    Float?    @default(0)
+  montant_commission_courtage Float?    @default(0)
+  montant_commission_TURP     Float?    @default(0)
+  montant_commission_CSPE     Float?    @default(0)
+  montant_commission_logiciel Float?    @default(0)
+  montant_commission_GBT      Float?    @default(0)
+  statut_paiement             Boolean?  @default(false)
+  user_id                     Int
+  User                        User      @relation(fields: [user_id], references: [id])
+  Etudes                      Etudes[]
+}
+
+model Clients {
+  id               Int          @id @default(autoincrement())
+  siret            String       @db.VarChar(220)
+  nom_entreprise   String?      @db.VarChar(220)
+  raison_sociale   String       @db.VarChar(1020)
+  forme_juridique  String?      @db.VarChar(220)
+  code_naf         String       @db.VarChar(220)
+  adresse_postal   String       @db.VarChar(220)
+  ville            String       @db.VarChar(220)
+  code_postal      String       @db.VarChar(220)
+  user_id          Int
+  secteur_activite String?      @db.VarChar(220)
+  User             User         @relation(fields: [user_id], references: [id])
+  Etudes           Etudes[]
+  Dirigeants       Dirigeants[]
+}
+
+model Etudes {
+  id            Int          @id @default(autoincrement())
+  nom_etude     String       @db.VarChar(225)
+  date_debut    DateTime     @default(now())
+  date_fin      DateTime     @default(now())
+  statut        String       @default("en cours") @db.VarChar(225)
+  type          String       @db.VarChar(225)
+  ID_clients    Int
+  brouillon     Boolean?     @default(true)
+  Clients       Clients      @relation(fields: [ID_clients], references: [id])
+  contrats      Contrats[]
+  resultats     Resultats[]
+  Commissions   Commissions? @relation(fields: [commissionsId], references: [id])
+  commissionsId Int?
+}
+
+model Contrats {
+  id                  Int      @id @default(autoincrement())
+  reference_contrat   String   @db.VarChar(225)
+  nom_site            String   @db.VarChar(225)
+  fournisseur         String   @db.VarChar(225)
+  date_echeance       DateTime @default(now())
+  type_contrat        String   @default("prestation") @db.VarChar(225)
+  fichier_contrat     Bytes?
+  fichier_contrat_url String?  @db.VarChar(225)
+  id_etudes           Int
+  status              String?  @db.VarChar(220)
+  pdfID               Int?
+  etude               Etudes   @relation(fields: [id_etudes], references: [id])
+}
+
+model Fournisseurs {
+  id              Int    @id @default(autoincrement())
+  logo            String @db.VarChar(225)
+  nom_fournisseur String @db.VarChar(225)
+  type_energie    String @db.VarChar(225)
+}
+
+model Resultats {
+  id                                    Int      @id @default(autoincrement())
+  noteGlobal                            Int?
+  noteCategorieAnalyse                  Int?
+  noteCategorieTaxes                    Int?
+  noteCategorieEconomiesEnergie         Int?
+  noteCategorieReglementaire            Int?
+  CSPE                                  Boolean?
+  ctr_nb_compteur_gaz                   Int
+  ctr_nb_compteur_elec                  Int
+  ctr_fournisseurs_gaz                  String   @db.VarChar(225)
+  ctr_fournisseurs_elec                 String   @db.VarChar(225)
+  ctr_ARENH                             Boolean?
+  ctr_renegociation                     Boolean?
+  ctr_duree_engage_definit              Boolean?
+  ctr_est_accomp_tiers                  String?  @db.VarChar(225)
+  tx_puissance_souscrite                String?  @db.VarChar(225)
+  tx_formule_tarifaire                  Boolean?
+  tx_subis_penalites                    Boolean?
+  tx_surfacturation                     Boolean?
+  tx_coherence_puissance_1              Boolean?
+  tx_periodique_1_1                     Boolean?
+  tx_code_naf_eligible                  Boolean?
+  tx_cspe_eligible                      Boolean?
+  ec_reduc_consom                       Boolean?
+  ec_mesures_econom                     String?  @db.VarChar(225)
+  ec_actions_econom                     String?  @db.VarChar(225)
+  ec_outils_mesure_conso                Boolean?
+  rg_adheresion_tertiaire_1             Boolean?
+  rg_adheresion_tertiaire_1_ne_sais_pas Boolean?
+  rg_operate_tertiaire_oui_01           Boolean?
+  rg_oblig_obj_tertiaire_oui_01         Boolean?
+  rg_inconnu_tertiaire_non_01           Boolean?
+  rg_bis_1k_tertiaire_non_01            Boolean?
+  rg_bacs_oui_01                        Boolean?
+  rg_bacs_outils_oui_01                 Boolean?
+  rg_bacs_non_01                        Boolean?
+  rg_bacs_ne_sais_pas                   Boolean?
+  id_etudes                             Int      @unique
+  etude                                 Etudes   @relation(fields: [id_etudes], references: [id])
+}
+
+model filleul {
+  id                       Int                  @id @default(autoincrement())
+  raison_sociale           String               @db.VarChar(225)
+  secteur_activite         String               @db.VarChar(225)
+  nom                      String               @db.VarChar(225)
+  prenom                   String               @db.VarChar(225)
+  fonction                 String               @db.VarChar(225)
+  email                    String               @unique(map: "email") @db.VarChar(225)
+  fixe                     String               @db.VarChar(225)
+  mobile                   String               @db.VarChar(225)
+  user_id                  Int
+  User                     User                 @relation(fields: [user_id], references: [id])
+  affiliated               Boolean              @default(false)
+  date_affilation          DateTime?
+  actif                    Boolean              @default(false)
+  createdAt                DateTime             @default(now()) @map("created_at")
+  updatedAt                DateTime             @updatedAt @map("updated_at")
+  lien_affiliation         String?              @unique(map: "lien") @db.VarChar(225)
+  date_expiration          DateTime?
+  date_expiration_avantage DateTime?
+  pourcentage_promo        Int?                 @default(5)
+  Commission_filleul       Commission_filleul[]
+}
+
+model Commission_filleul {
+  id                         Int      @id @default(autoincrement())
+  montant_commission_filleul Float    @default(0)
+  montant_commission_parrain Float    @default(0)
+  statut_paiement            Boolean  @default(false)
+  filleul_id                 Int
+  Filleul                    filleul  @relation(fields: [filleul_id], references: [id])
+  date                       DateTime @default(now())
+  courtage                   Boolean
+  TURP                       Boolean
+  CSPE                       Boolean
+  logiciel                   Boolean
+  GBT                        Boolean
+}

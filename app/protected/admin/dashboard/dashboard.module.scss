@@ -1,0 +1,1538 @@
+.sectionContainer {
+    background-size: cover;
+    background-position: center;
+    background-image: url("mac.webp");
+    height: 100vh;
+    padding: 1rem;
+
+    .dashboardContainer {
+        height: 100vh;
+
+        background-color: rgba(16 18 27 / 40%);
+        backdrop-filter: blur(24px);
+        position: relative;
+        border-radius: 1rem;
+        display: flex;
+        overflow: hidden;
+
+        aside {
+
+            background-color: #1a202c;
+            overflow-y: auto;
+            top: 0;
+            background-color: transparent;
+            display: block;
+            position: relative;
+            width: 16rem;
+            z-index: auto;
+            right: 0;
+
+
+            .btnsMacContainer {
+                padding-bottom: 1.5rem;
+
+
+                .btnsMac {
+                    display: flex;
+                    height: 5rem;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding-left: 1rem;
+                    padding-left: 2rem;
+
+                    .btns {
+                        height: 1rem;
+                        width: 1rem;
+                        border-radius: 50%;
+                        background-color: #f96057;
+                        box-shadow: 24px 0 0 0 #f8ce52, 48px 0 0 0 #5fcf65;
+
+                    }
+                }
+
+                ul {
+                    margin-top: 1.5rem;
+                    padding-left: 1.5rem;
+                    list-style: none;
+
+
+                    li {
+                        .AppContainer {
+                            margin-bottom: 2.5rem;
+
+
+                            .linksContainer {
+
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+
+
+                                .linksAndIcons {
+                                    display: flex;
+                                    margin: 20px;
+                                    width: 100%;
+                                    justify-content: center;
+                                    align-items: center;
+
+
+                                    .icons {
+                                        color: white !important;
+                                        margin-right: 20px;
+
+                                        svg {
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .AppTitle {
+                                font-weight: 500;
+                                margin-bottom: 1rem;
+                                padding-left: 1.25rem;
+                                color: #a0aec0;
+                                font-size: 1.125rem;
+                                padding-left: 1.5rem;
+                            }
+
+                            .links {
+                                color: white;
+                                text-decoration: inherit;
+                                cursor: pointer;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .infoContainer {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            padding-left: 0;
+            width: 100%;
+            gap: 1rem;
+
+
+            header {
+                position: relative;
+                z-index: 10;
+                height: 4rem;
+                width: 100%;
+                align-items: center;
+                height: 5rem;
+
+
+                .headerContainer {
+                    position: relative;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: flex;
+                    height: 100%;
+                    flex-direction: column;
+                    flex-direction: column;
+                    padding-left: 0.75rem;
+                    padding-right: 0.75rem;
+
+                    .navbar {
+                        position: relative;
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        padding-left: 0.25rem;
+                        margin-left: 0;
+                        padding-right: 0.5rem;
+
+                        .generalContainer {
+                            position: relative;
+                            left: 0;
+                            display: flex;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+
+                            .firstContainer {
+                                position: relative;
+                                display: flex;
+                                height: 100%;
+                                width: 3rem;
+                                align-items: center;
+
+                                button {
+                                    background-color: transparent;
+                                    font-size: 2.5rem;
+                                    color: #ffffff;
+                                    outline: none;
+                                    border: none;
+                                    display: none;
+                                }
+                            }
+
+                            .secondContainer {
+                                position: relative;
+                                height: 100%;
+                                width: 100%;
+                                align-items: center;
+                                display: flex;
+                                width: 16rem;
+
+                                input {
+                                    display: block;
+                                    width: 100%;
+                                    border-radius: 1rem;
+                                    background-color: #f3f4f6;
+                                    padding-top: 0.375rem;
+                                    /* Vous devrez peut-être ajuster la valeur */
+                                    padding-bottom: 0.375rem;
+                                    padding-left: 2.5rem;
+                                    padding-right: 1rem;
+                                    color: #cbd5e0;
+                                    border-color: transparent;
+                                    outline: none;
+
+
+
+                                }
+
+                                .plus {
+                                    position: absolute;
+                                    right: 0;
+                                    margin-right: 0.5rem;
+
+                                    height: auto;
+                                    border-radius: 1rem;
+                                    border: 1px solid;
+                                    border-color: #d1d5db;
+                                    padding-left: 0.5rem;
+                                    /* Vous devrez peut-être ajuster la valeur */
+                                    padding-right: 0.5rem;
+                                    padding-top: 0.25rem;
+                                    /* Vous devrez peut-être ajuster la valeur */
+                                    padding-bottom: 0.25rem;
+                                    font-size: 0.75rem;
+                                    color: #cbd5e0;
+                                    display: block;
+
+                                }
+                            }
+
+                            .thirdContainer {
+                                position: relative;
+                                margin-left: 1.25rem;
+                                display: flex;
+                                width: 75%;
+                                align-items: center;
+                                justify-content: flex-end;
+                                padding: 0.25rem;
+                                right: auto;
+                                margin-right: 0;
+                                width: 25%;
+
+                                span {
+                                    position: relative;
+                                    display: block;
+                                    border-radius: 0.25rem;
+                                    padding-left: 0.75rem;
+                                    /* Vous devrez peut-être ajuster la valeur */
+                                    padding-right: 0.75rem;
+                                    padding-top: 0.5rem;
+                                    /* Vous devrez peut-être ajuster la valeur */
+                                    padding-bottom: 0.5rem;
+                                    color: #ffffff;
+
+                                    svg {
+                                        color: white;
+                                    }
+
+                                    .numbNotif {
+                                        position: absolute;
+                                        right: 0;
+                                        top: 0;
+                                        border-radius: 9999px;
+                                        background-color: #1c64f2;
+                                        padding-left: 0.5rem;
+                                        /* Vous devrez peut-être ajuster la valeur */
+                                        padding-right: 0.5rem;
+                                        padding-top: 0.125rem;
+                                        /* Vous devrez peut-être ajuster la valeur */
+                                        padding-bottom: 0.125rem;
+                                        font-size: 0.75rem;
+                                        font-weight: bold;
+                                    }
+
+                                }
+
+                                .profilePic {
+                                    position: relative;
+                                    display: block;
+                                    padding-left: 1.25rem;
+
+                                    img {
+
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        height: 2.5rem;
+                                        width: 2.5rem;
+                                        border-radius: 50%;
+                                        object-fit: cover;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            main {
+                height: 100vh;
+                overflow: auto;
+                padding-bottom: 9rem;
+                padding-top: 1rem;
+                padding-left: 0.5rem;
+                /* Vous devrez peut-être ajuster la valeur */
+                padding-right: 0.5rem;
+                padding-bottom: 2rem;
+                padding-left: 1rem;
+                /* Vous devrez peut-être ajuster la valeur */
+                padding-right: 1rem;
+                padding-left: 1.5rem;
+                /* Vous devrez peut-être ajuster la valeur */
+                padding-right: 1.5rem;
+                background-color: rgba(16 18 27 / 40%);
+                color: #f9fafb;
+
+                div {
+                    .chart {
+                        display: flex;
+
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-radius: 1rem;
+                        padding-left: 3rem;
+                        /* Vous devrez peut-être ajuster la valeur */
+                        padding-right: 3rem;
+                        padding-top: 1.5rem;
+                        /* Vous devrez peut-être ajuster la valeur */
+                        padding-bottom: 1.5rem;
+                        flex-wrap: nowrap;
+                        background-image: linear-gradient(to right top, rgb(207, 74, 243), rgb(231, 59, 215), rgb(246, 49, 188), rgb(253, 49, 162), rgb(255, 58, 139), rgb(255, 75, 120), rgb(255, 94, 104), rgb(255, 112, 92), rgb(255, 140, 81), rgb(255, 170, 73), rgb(255, 200, 72), rgb(255, 230, 82));
+
+                        img {
+                            height: 150px;
+                        }
+                    }
+
+                    .usersTable {
+                        background-color: rgb(146 151 179 / 13%);
+                        border-radius: 1rem;
+                        margin-top: 2rem;
+                        min-height: 400px;
+                        padding: 40px;
+
+                        .userTableContainer {
+                            width: 100%;
+                            margin-left: auto;
+                            margin-right: auto;
+
+
+                            .table {
+                                max-width: 100%;
+                                overflow-x: auto;
+                                border-radius: 0.5rem;
+
+                                table {
+                                    width: 100%;
+                                    line-height: 1.5;
+                                    color: #ffffff;
+
+                                    thead {
+                                        tr {
+                                            th {
+                                                border-bottom: 1px solid #e2e8f0;
+                                                border-color: #edf2f7;
+                                                padding-left: 1.25rem;
+
+                                                padding-right: 1.25rem;
+                                                padding-top: 0.75rem;
+
+                                                padding-bottom: 0.75rem;
+                                                text-align: left;
+                                                font-size: 0.875rem;
+                                                font-weight: normal;
+                                                text-transform: uppercase;
+                                            }
+                                        }
+                                    }
+
+                                    tbody {
+                                        tr {
+                                            td {
+                                                border-bottom: 1px solid #e2e8f0;
+                                                border-color: #edf2f7;
+                                                padding: 1.25rem;
+                                                font-size: 0.875rem;
+
+                                                .tdContainer {
+                                                    display: flex;
+                                                    align-items: center;
+
+                                                    .pic {
+                                                        flex-shrink: 0;
+
+                                                        img {
+
+                                                            margin-left: auto;
+                                                            margin-right: auto;
+                                                            height: 2.5rem;
+                                                            width: 2.5rem;
+                                                            border-radius: 50%;
+                                                            object-fit: cover;
+                                                            cursor: pointer;
+                                                        }
+                                                    }
+
+                                                    .infoTd {
+                                                        margin-left: 3rem;
+
+                                                        p {
+                                                            white-space: nowrap;
+
+                                                        }
+
+                                                        .actif {
+                                                            position: relative;
+                                                            display: inline-block;
+                                                            padding-left: 0.75rem;
+
+                                                            padding-right: 0.75rem;
+                                                            padding-top: 0.25rem;
+
+                                                            padding-bottom: 0.25rem;
+                                                            font-weight: 600;
+                                                            line-height: 1.25;
+
+                                                            .status {
+                                                                position: absolute;
+                                                                top: 0;
+                                                                right: 0;
+                                                                bottom: 0;
+                                                                left: 0;
+                                                                border-radius: 9999px;
+                                                                background-color: #5fcf65;
+
+                                                            }
+
+                                                            .state {
+                                                                position: relative;
+
+                                                            }
+
+
+                                                        }
+
+                                                        .NoActif {
+                                                            position: relative;
+                                                            display: inline-block;
+                                                            padding-left: 0.75rem;
+
+                                                            padding-right: 0.75rem;
+                                                            padding-top: 0.25rem;
+
+                                                            padding-bottom: 0.25rem;
+                                                            font-weight: 600;
+                                                            line-height: 1.25;
+
+                                                            .status {
+                                                                position: absolute;
+                                                                top: 0;
+                                                                right: 0;
+                                                                bottom: 0;
+                                                                left: 0;
+                                                                border-radius: 9999px;
+                                                                background-color: #f96057 !important;
+
+                                                            }
+
+                                                            .state {
+                                                                position: relative;
+
+                                                            }
+
+
+                                                        }
+
+                                                        .lienModifier {
+                                                            color: #4f46e5;
+                                                            text-decoration: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+
+                                .pagesContainer {
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    padding: 1.25rem;
+                                    
+
+
+                                    .nbBtnPages {
+                                        display: flex;
+                                        align-items: center;
+
+                                        .previousBtn {
+                                            border: none;
+                                            width: 100%;
+                                            border-top-left-radius: 1rem;
+                                            border-bottom-left-radius: 1rem;
+                                            border: 1px solid;
+                                            background-color: #ffffff;
+                                            padding: 1rem;
+                                            font-size: 1rem;
+                                            color: #6b7280;
+                                            background-color: #f3f4f6;
+
+                                            svg {
+                                                display: block;
+
+                                            }
+
+                                            &:hover {
+                                                background-color: #f3f4f6;
+                                            }
+
+                                        }
+
+                                        .numbersbtns {
+                                            width: 100%;
+                                            border-top-width: 1px;
+                                            border-bottom-width: 1px;
+                                            background-color: #ffffff;
+                                            padding-left: 1rem;
+                                            padding-right: 1rem;
+                                            padding-top: 0.5rem;
+                                            padding-bottom: 0.5rem;
+                                            font-size: 1rem;
+                                            color: #6366f1;
+
+
+                                            &:hover {
+                                                background-color: #f3f4f6;
+                                            }
+                                        }
+
+                                        .nextBtn {
+                                            width: 100%;
+                                            border-top-right-radius: 1rem;
+                                            border-bottom-right-radius: 1rem;
+                                            border-top-width: 1px;
+                                            border-bottom-width: 1px;
+                                            border-right-width: 1px;
+                                            background-color: #ffffff;
+                                            padding: 1rem;
+                                            font-size: 1rem;
+                                            color: #6b7280;
+
+                                            border: none;
+
+                                            svg {
+                                                display: block;
+
+                                            }
+
+                                            &:hover {
+                                                background-color: #f3f4f6;
+
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    .anotherInfosContainer {
+                        color: white;
+                        background-color: rgba(146, 151, 179, 0.13);
+                        margin-top: 20px;
+                        height: 450px;
+                        border-radius: 1rem;
+                        display: flex;
+                        justify-content: space-around;
+
+
+                        .inscriptionContainer {
+                            display: flex;
+                            flex-direction: column;
+                            width: 95%;
+
+
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                font-size: 24px;
+                            }
+
+                            .inscription {
+
+                                height: 95%;
+                                border-radius: 1rem;
+
+                                overflow: scroll;
+
+                                .table {
+                                    max-width: 100%;
+                                    overflow-x: auto;
+                                    border-radius: 0.5rem;
+
+
+                                    table {
+                                        width: 100%;
+                                        line-height: 1.5;
+                                        color: #ffffff;
+
+
+                                        thead {
+                                            tr {
+                                                th {
+                                                    border-bottom: 1px solid #e2e8f0;
+                                                    border-color: #edf2f7;
+                                                    padding-left: 1.25rem;
+
+                                                    padding-right: 1.25rem;
+                                                    padding-top: 0.75rem;
+
+                                                    padding-bottom: 0.75rem;
+                                                    text-align: left;
+                                                    font-size: 0.875rem;
+                                                    font-weight: normal;
+                                                    text-transform: uppercase;
+                                                }
+                                            }
+                                        }
+
+                                        tbody {
+                                            tr {
+                                                td {
+                                                    border-bottom: 1px solid #e2e8f0;
+                                                    border-color: #edf2f7;
+                                                    padding: 1.25rem;
+                                                    font-size: 0.875rem;
+
+                                                    .tdContainer {
+                                                        display: flex;
+                                                        align-items: center;
+
+                                                        .pic {
+                                                            flex-shrink: 0;
+
+                                                            img {
+
+                                                                margin-left: auto;
+                                                                margin-right: auto;
+                                                                height: 2.5rem;
+                                                                width: 2.5rem;
+                                                                border-radius: 50%;
+                                                                object-fit: cover;
+                                                                cursor: pointer;
+                                                            }
+                                                        }
+
+                                                        .infoTd {
+                                                            margin-left: 1rem;
+                                                            max-width: 200px;
+                                                            max-height: 100px;
+                                                            overflow: scroll;
+
+
+                                                            p {
+                                                                white-space: wrap;
+
+                                                            }
+
+
+
+                                                            .btnsVerdict {
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+
+                                                                .accepte {
+                                                                    display: flex;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+
+                                                                    span {
+                                                                        display: none;
+                                                                    }
+
+                                                                    height: 2rem;
+                                                                    width: 2rem;
+                                                                    border-radius: 50%;
+                                                                    background-color: #5fcf65;
+                                                                    border: none;
+                                                                    margin-right: 15px;
+                                                                    cursor: pointer;
+
+                                                                    &:hover {
+                                                                        span {
+                                                                            display: block;
+                                                                        }
+
+                                                                    }
+                                                                }
+
+                                                                .decline {
+                                                                    display: flex;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+
+                                                                    span {
+                                                                        display: none;
+                                                                    }
+
+                                                                    height: 2rem;
+                                                                    width: 2rem;
+                                                                    border-radius: 50%;
+                                                                    background-color: #f96057;
+                                                                    border: none;
+                                                                    cursor: pointer;
+
+                                                                    &:hover {
+                                                                        span {
+                                                                            display: block;
+
+                                                                        }
+
+                                                                    }
+
+
+                                                                }
+
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                    }
+
+                                    .pagesContainer {
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        padding: 1.25rem;
+
+                                        .nbBtnPages {
+                                            display: flex;
+                                            align-items: center;
+
+                                            .previousBtn {
+                                                border: none;
+                                                width: 100%;
+                                                border-top-left-radius: 1rem;
+
+                                                border-bottom-left-radius: 1rem;
+                                                border: 1px solid;
+                                                background-color: #ffffff;
+                                                padding: 1rem;
+                                                font-size: 1rem;
+                                                color: #6b7280;
+                                                background-color: #f3f4f6;
+
+                                                svg {
+                                                    display: block;
+
+                                                }
+
+                                                &:hover {
+                                                    background-color: #f3f4f6;
+                                                }
+
+                                            }
+
+                                            .numbersbtns {
+                                                width: 100%;
+                                                border-top-width: 1px;
+                                                border-bottom-width: 1px;
+                                                background-color: #ffffff;
+                                                padding-left: 1rem;
+
+                                                padding-right: 1rem;
+                                                padding-top: 0.5rem;
+
+                                                padding-bottom: 0.5rem;
+                                                font-size: 1rem;
+                                                color: #6366f1;
+
+
+                                                &:hover {
+                                                    background-color: #f3f4f6;
+                                                }
+                                            }
+
+                                            .nextBtn {
+                                                width: 100%;
+                                                border-top-right-radius: 1rem;
+
+                                                border-bottom-right-radius: 1rem;
+                                                border-top-width: 1px;
+                                                border-bottom-width: 1px;
+                                                border-right-width: 1px;
+                                                background-color: #ffffff;
+                                                padding: 1rem;
+                                                font-size: 1rem;
+                                                color: #6b7280;
+
+                                                border: none;
+
+                                                svg {
+                                                    display: block;
+
+                                                }
+
+                                                &:hover {
+                                                    background-color: #f3f4f6;
+
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .messageContainer {
+                            width: 45%;
+
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                font-size: 24px;
+                            }
+
+                            .message {
+
+                                height: 390px;
+                                border-radius: 1rem;
+                                background-color: #a0aec0;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.aggrandir {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnsMacGreen {
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    padding-left: 2rem;
+
+    .btns {
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        background-color: #5fcf65;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+
+
+.modalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+    z-index: 9999;
+}
+
+.modalContainer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.openModalButton {
+    cursor: pointer;
+}
+
+.modalOverlay {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modalContent {
+    background-color: rgba(62, 68, 94, 0.4);
+    backdrop-filter: blur(24px);
+    border-radius: 1rem;
+    width: 100% !important;
+    height: 70%;
+}
+
+.redbtn {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.btnsMacRed {
+    display: flex;
+    height: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0.5rem;
+    padding-left: 0.5rem;
+
+    .btns {
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        background-color: #f96057;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        color: white;
+
+
+    }
+}
+
+.pagination {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    .paginationContainer {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        .btn {
+            padding: 8px 15px;
+            border-radius: 20px;
+            background-color: #6366f1;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            color: white;
+            border: none;
+        }
+    }
+}
+
+.asides {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f1f1f1; // Set your desired background color
+    transition: transform 0.3s ease-in-out;
+
+
+}
+
+
+.btnToggleAside {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    padding: 3px;
+    cursor: pointer;
+    z-index: 0;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: whitesmoke;
+    left: 198px;
+    z-index: 2;
+
+}
+
+.test {
+    position: absolute;
+    left: -15px;
+}
+
+.ouverture {
+    opacity: 0;
+    animation: apparition 1s ease-out forwards;
+}
+
+.fermeture {
+    border: 1px solid green;
+    opacity: 1;
+    animation: disparition 1s ease-in forwards;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+
+        border-color: transparent;
+
+    }
+
+    to {
+        opacity: 1;
+
+
+
+    }
+}
+
+
+@keyframes disparition {
+    from {
+        opacity: 1;
+
+    }
+
+    to {
+        opacity: 0;
+        border-color: transparent;
+    }
+}
+
+
+.usersTable {
+    background-color: rgb(146 151 179 / 13%);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    min-height: 400px;
+    padding: 40px;
+
+    .userTableContainer {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        .table {
+            max-width: 100%;
+            overflow-x: auto;
+            border-radius: 0.5rem;
+
+            table {
+                width: 100%;
+                line-height: 1.5;
+                color: #ffffff;
+
+                thead {
+                    tr {
+                        th {
+                            border-bottom: 1px solid #e2e8f0;
+                            border-color: #edf2f7;
+                            padding-left: 1.25rem;
+                            /* Vous devrez peut-être ajuster la valeur */
+                            padding-right: 1.25rem;
+                            padding-top: 0.75rem;
+                            /* Vous devrez peut-être ajuster la valeur */
+                            padding-bottom: 0.75rem;
+                            text-align: left;
+                            font-size: 0.875rem;
+                            font-weight: normal;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            border-bottom: 1px solid #e2e8f0;
+                            border-color: #edf2f7;
+                            padding: 1.25rem;
+                            font-size: 0.875rem;
+
+                            .tdContainer {
+                                display: flex;
+                                align-items: center;
+
+                                .pic {
+                                    flex-shrink: 0;
+
+                                    img {
+
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        height: 2.5rem;
+                                        width: 2.5rem;
+                                        border-radius: 50%;
+                                        object-fit: cover;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                .infoTd {
+                                    margin-left: 3rem;
+
+                                    p {
+                                        white-space: nowrap;
+
+                                    }
+
+                                    .actif {
+                                        position: relative;
+                                        display: inline-block;
+                                        padding-left: 0.75rem;
+                                        /* Vous devrez peut-être ajuster la valeur */
+                                        padding-right: 0.75rem;
+                                        padding-top: 0.25rem;
+                                        /* Vous devrez peut-être ajuster la valeur */
+                                        padding-bottom: 0.25rem;
+                                        font-weight: 600;
+                                        line-height: 1.25;
+
+                                        .status {
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            bottom: 0;
+                                            left: 0;
+                                            border-radius: 9999px;
+                                            background-color: #5fcf65;
+
+                                        }
+
+                                        .state {
+                                            position: relative;
+
+                                        }
+
+
+                                    }
+
+                                    .NoActif {
+                                        position: relative;
+                                        display: inline-block;
+                                        padding-left: 0.75rem;
+                                        /* Vous devrez peut-être ajuster la valeur */
+                                        padding-right: 0.75rem;
+                                        padding-top: 0.25rem;
+                                        /* Vous devrez peut-être ajuster la valeur */
+                                        padding-bottom: 0.25rem;
+                                        font-weight: 600;
+                                        line-height: 1.25;
+
+                                        .status {
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            bottom: 0;
+                                            left: 0;
+                                            border-radius: 9999px;
+                                            background-color: #f96057 !important;
+
+                                        }
+
+                                        .state {
+                                            position: relative;
+
+                                        }
+
+
+                                    }
+
+                                    .lienModifier {
+                                        color: #4f46e5;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .pagesContainer {
+                flex-direction: row;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1.25rem;
+
+
+                .nbBtnPages {
+                    display: flex;
+                    align-items: center;
+
+                    .previousBtn {
+                        border: none;
+                        width: 100%;
+                        border-top-left-radius: 1rem;
+                        /* Vous devrez peut-être ajuster la valeur */
+                        border-bottom-left-radius: 1rem;
+                        border: 1px solid;
+                        background-color: #ffffff;
+                        padding: 1rem;
+                        font-size: 1rem;
+                        color: #6b7280;
+                        background-color: #f3f4f6;
+
+                        svg {
+                            display: block;
+
+                        }
+
+                        &:hover {
+                            background-color: #f3f4f6;
+                        }
+
+                    }
+
+                    .numbersbtns {
+                        width: 100%;
+                        border-top-width: 1px;
+                        border-bottom-width: 1px;
+                        background-color: #ffffff;
+                        padding-left: 1rem;
+                        /* Vous devrez peut-être ajuster la valeur */
+                        padding-right: 1rem;
+                        padding-top: 0.5rem;
+                        /* Vous devrez peut-être ajuster la valeur */
+                        padding-bottom: 0.5rem;
+                        font-size: 1rem;
+                        color: #6366f1;
+
+
+                        &:hover {
+                            background-color: #f3f4f6;
+                        }
+                    }
+
+                    .nextBtn {
+                        width: 100%;
+                        border-top-right-radius: 1rem;
+                        /* Vous devrez peut-être ajuster la valeur */
+                        border-bottom-right-radius: 1rem;
+                        border-top-width: 1px;
+                        border-bottom-width: 1px;
+                        border-right-width: 1px;
+                        background-color: #ffffff;
+                        padding: 1rem;
+                        font-size: 1rem;
+                        color: #6b7280;
+
+                        border: none;
+
+                        svg {
+                            display: block;
+
+                        }
+
+                        &:hover {
+                            background-color: #f3f4f6;
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.focus {
+    padding: 10px;
+    /* Ajustez la taille du padding selon vos besoins */
+    background-color: #a0aec0;
+    /* Couleur de fond pour le focus */
+    border: 2px solid #cbd5e0;
+    /* Bordure pour distinguer le focus */
+    border-radius: 5px;
+    /* Coins arrondis pour un look doux */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Ombre subtile pour la profondeur */
+    transition: all 0.3s ease-in-out;
+    /* Transition douce pour le focus */
+    outline: none;
+    /* Supprimer l'outline par défaut */
+}
+
+@media (max-width : 768px) {
+    .asides {
+
+        display: none !important;
+    }
+
+    .sectionContainer {
+
+        padding: 0;
+
+        .dashboardContainer {
+
+
+            .btnToggleAside {
+                display: none;
+            }
+
+            .infoContainer {
+
+                header {
+                    .headerContainer {
+                        .navbar {
+                            .generalContainer {
+
+                                justify-content: flex-end;
+
+                                .firstContainer {
+
+                                    display: none;
+
+                                }
+
+                                .secondContainer {
+                                    display: none;
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .chart {
+        flex-direction: column;
+
+        h1 {
+            font-size: 13px;
+        }
+
+    }
+
+    .anotherInfosContainer {
+        height: auto !important;
+
+        .inscriptionContainer {
+            .aggrandir {
+                h1 {
+                    font-size: 13px;
+                }
+
+                .btnsMacGreen {
+                    display: none;
+                }
+            }
+
+            .inscription {
+
+                .table {
+
+                    table {
+                        thead {
+                            tr {
+                                th {
+                                    font-size: 12px !important;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                td {
+                                    font-size: 10px !important;
+                                    padding: 5px !important;
+
+                                    .tdContainer {
+                                        .pic {
+                                            display: none;
+                                        }
+
+                                        .infoTd {
+                                            .btnsVerdict {
+                                                .accepte {
+
+                                                    height: 1rem !important;
+                                                    width: 1rem !important;
+                                                }
+
+                                                .decline {
+                                                    height: 1rem !important;
+                                                    width: 1rem !important;
+                                                }
+                                            }
+                                        }
+
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+    }
+
+    .usersTable {
+        padding: 5px !important;
+
+        .userTableContainer {
+            .aggrandir {
+                h1 {
+                    font-size: 12px;
+                    margin-top: 10px;
+                }
+
+                .btnsMacGreen {
+                    display: none;
+                }
+            }
+
+            .table {
+                table {
+                    thead {
+                        tr {
+                            th {
+                                font-size: 12px !important;
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            td {
+                                font-size: 10px !important;
+                                padding: 5px !important;
+
+                                .tdContainer {
+
+
+                                    .pic {
+                                        display: none;
+                                    }
+
+                                    .infoTd {
+                                        margin-left: 0 !important;
+
+                                        .actif {
+
+                                            padding-left: 0.45rem !important;
+                                            padding-right: 0.45rem !important;
+                                            padding-top: 0.15rem !important;
+                                            padding-bottom: 0.15rem !important;
+                                        }
+
+                                        .NoActif {
+                                            padding-left: 0.35rem !important;
+                                            padding-right: 0.35rem !important;
+                                            padding-top: 0.15rem !important;
+                                            padding-bottom: 0.15rem !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.dropdown {
+    border: none !important;
+    padding: 0 !important;
+    background-color: #1a1b3b;
+
+    &:hover {
+        background-color: transparent !important;
+
+    }
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.deconnexion {
+    font-weight: bold;
+}

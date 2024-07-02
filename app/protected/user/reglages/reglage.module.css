@@ -1,0 +1,70 @@
+.creer {
+  height: 80vh;
+  padding-bottom: 9rem;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: scroll !important;
+}
+
+.title {
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.title h1 {
+  border-radius: 20px;
+}
+
+.btnSubmit {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .mobile {
+    margin-top: 10px !important;
+  }
+  .backgroungCreer {
+    justify-content: center;
+  }
+  .Fields {
+    flex-direction: column;
+  }
+  .Fields .miniFields {
+    display: flex;
+    flex-direction: column;
+  }
+  .btnSubmit {
+    margin-top: 10px;
+  }
+}
+.Fields {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.Fields .miniFields {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile {
+  margin-top: 10px;
+}
+
+.btnReset:hover {
+  background-color: #26713a;
+}/*# sourceMappingURL=reglage.module.css.map */

@@ -1,0 +1,62 @@
+/* confirmation.module.css */
+.confirmed {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(157, 246, 157);
+  transition: background-color 0.5s ease;
+}
+
+.alreadyConfirmed {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(141, 141, 250);
+  transition: background-color 0.5s ease;
+}
+
+.notConfirmed {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #fa5b5b;
+  transition: background-color 0.5s ease;
+}
+
+.noToken {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.error {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #f98a8a;
+  transition: background-color 0.5s ease;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.message h1 {
+  margin-top: 20px;
+}
+.message h2 {
+  color: white;
+}/*# sourceMappingURL=confirmation.module.css.map */

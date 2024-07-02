@@ -1,0 +1,346 @@
+.CardContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.CardContainer .card {
+  cursor: pointer;
+  border: 3px solid #2c8443;
+  height: 200px;
+  width: 15%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  color: #2c8443;
+}
+.CardContainer .card img {
+  margin-top: 10px;
+}
+.CardContainer .card p {
+  margin-top: 25px;
+}
+
+.accordionSummary {
+  color: aliceblue !important;
+}
+.accordionSummary:hover {
+  background-color: #14b497 !important;
+}
+
+.AccordionsContainer {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.AccordionsContainer .Accordion {
+  border: 3px solid aliceblue !important;
+  margin: 10px !important;
+  background-color: #f0f2f5;
+  box-shadow: 6px 6px 25px -7px black;
+  border: none;
+}
+
+.infosResult {
+  margin: 10px;
+}
+.infosResult .nameAndSiret {
+  display: flex;
+  justify-content: space-around;
+}
+.infosResult .nameAndSiret h1 {
+  font-size: 20px;
+}
+.infosResult .tableResult {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 510px;
+}
+.infosResult .tableResult .card {
+  border: 3px solid rgba(255, 255, 255, 0.7);
+  height: 230px;
+  width: 20%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+.infosResult .tableResult .card .titleCard {
+  color: #2c8443;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.infosResult .tableResult .vert {
+  border-bottom: 3px solid #5be12d;
+  transition: border-bottom 4s ease;
+}
+.infosResult .tableResult .rouge {
+  border-bottom: 3px solid #ff0000;
+  transition: border-bottom 4s ease;
+}
+.infosResult .tableResult .orange {
+  border-bottom: 3px solid #ff8e00;
+  transition: border-bottom 4s ease;
+}
+
+.recapContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.recapContainer .recapReponse {
+  border: 3px solid #2c8443;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: default;
+  width: 25%;
+}
+.recapContainer .recapReponse h2 {
+  font-size: 16px;
+}
+.recapContainer .recapReponse h3 {
+  height: 100px;
+  font-size: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.infosClient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.infosClient .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+.infosClient .infos .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.infosClient .infos .container h1 {
+  background-image: -webkit-linear-gradient(0deg, #1a252a 5%, #14b497 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.infosClient .infos .container .datas {
+  font-size: 20px;
+  margin-left: 5px;
+  position: relative;
+  top: 3px;
+}
+
+.btnContainer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnContainer .buttonCpp {
+  color: white;
+  font-size: 18px;
+  background-color: #2c8443;
+  padding: 7px 25px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btnContainer .buttonCpp:hover {
+  background-color: #2e3d43;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test p {
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  .cardRes {
+    width: 90% !important;
+    margin-top: 10px;
+  }
+  .CardContainerScore {
+    height: auto !important;
+  }
+  .cardScore {
+    width: 90% !important;
+    margin-top: 10px;
+  }
+  .infosResult {
+    margin: 10px;
+  }
+  .infosResult .nameAndSiret {
+    display: flex;
+    justify-content: space-around;
+  }
+  .infosResult .nameAndSiret h1 {
+    font-size: 10px;
+  }
+  .infosResult .tableResult {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: auto;
+    flex-direction: column;
+  }
+  .infosResult .tableResult .card {
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 5px;
+  }
+  .infosResult .tableResult .card .titleCard {
+    color: #2c8443;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+  .infosResult .tableResult .vert {
+    border-bottom: 3px solid #5be12d;
+    transition: border-bottom 4s ease;
+  }
+  .infosResult .tableResult .rouge {
+    border-bottom: 3px solid #ff0000;
+    transition: border-bottom 4s ease;
+  }
+  .infosResult .tableResult .orange {
+    border-bottom: 3px solid #ff8e00;
+    transition: border-bottom 4s ease;
+  }
+  .infos {
+    width: 100%;
+  }
+  .infos .container {
+    display: flex;
+  }
+  .infos .container h1 {
+    font-size: 12px;
+  }
+  .infos .container .datas {
+    top: 0px !important;
+  }
+  .infos .container .datas p {
+    font-size: 12px;
+  }
+  .CardContainer {
+    flex-direction: column;
+  }
+  .CardContainer .card {
+    width: 90%;
+    margin-top: 10px;
+  }
+  .CardContainer .card img {
+    height: 90px;
+    width: 90px;
+  }
+  .CardContainer .card p {
+    font-size: 12px;
+  }
+  .recapContainer {
+    flex-direction: column;
+  }
+  .recapContainer h2 {
+    font-size: 12px !important;
+  }
+  .recapContainer h3 {
+    font-size: 10px !important;
+  }
+  .recapContainer .recapReponse {
+    width: 90%;
+    height: auto;
+  }
+}
+.testing {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleCard {
+  color: #2c8443;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.details {
+  width: 80%;
+}
+
+.cardRes {
+  border: 3px solid #2c8443;
+  height: 230px;
+  width: 20%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+.cardRes .titleCard {
+  color: #2c8443;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.cardScore {
+  border: 3px solid #2c8443;
+  height: 230px;
+  width: 25%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+.cardScore .titleCard {
+  color: #2c8443;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.vert {
+  border-bottom: 3px solid #5be12d;
+  transition: border-bottom 4s ease;
+}
+
+.rouge {
+  border-bottom: 3px solid #ff0000;
+  transition: border-bottom 4s ease;
+}
+
+.orange {
+  border-bottom: 3px solid #ff8e00;
+  transition: border-bottom 4s ease;
+}
+
+.CardContainerScore {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 510px;
+}/*# sourceMappingURL=resultat.module.css.map */

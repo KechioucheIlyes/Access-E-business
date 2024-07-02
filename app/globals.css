@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nunito:wght@700&family=Sora:wght@100;200;300;400;500&display=swap');
+
+* {
+    font-family: 'Nunito';
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    scrollbar-width: none;
+}
+
+
+* {
+    -ms-overflow-style: none;
+}
+
+body {
+    min-height: auto;
+    background-color: #f0f2f5;
+
+}
+
+::selection {
+    background: #2ecc71;
+
+    color: #ffffff;
+
+
+}
+
+.not-found {
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redirection {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.link-not-found {
+    text-decoration: underline;
+    color: #7450c0;
+
+}
+
+
+.sd-action-bar {
+
+    justify-content: center !important;
+
+}
+
+@media (max-width: 767px) {}

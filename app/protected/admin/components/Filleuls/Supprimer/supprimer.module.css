@@ -1,0 +1,56 @@
+.creer {
+  height: 100vh;
+  padding-bottom: 9rem;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  color: #f9fafb;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: scroll !important;
+}
+
+.supp {
+  padding-bottom: 9rem;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: scroll !important;
+}
+
+.backgroungCreer {
+  background-color: rgba(16, 18, 27, 0.4);
+}
+
+.title {
+  color: #f9fafb;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.title h1 {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.btnSubmit {
+  width: 100%;
+  text-align: center;
+}/*# sourceMappingURL=supprimer.module.css.map */

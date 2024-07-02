@@ -1,0 +1,78 @@
+.terminado {
+    border: 3px solid #5fcc64 !important;
+    padding: 5px;
+    border-radius: 20px;
+    color: #5fcc64;
+    position: relative;
+    left: 10px;
+}
+
+.encours {
+    border: 3px solid #f8ce52 !important;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    left: 10px;
+    color: #f8ce52;
+}
+
+.perdue {
+    border: 3px solid #f96057 !important;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    left: 10px;
+    color: #f96057;
+}
+
+
+
+.btn {
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100%;
+
+    button {
+        background-color: #1a252a;
+        border: none;
+        padding: 7px 25px;
+        color: wheat;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+
+.pagination {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+
+    .paginationContainer {
+        display: flex;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+.signed {
+
+    border: 1px solid #5fcc64;
+    color: #5fcc64;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.noSigned {
+
+    border: 1px solid #f96057;
+    color: #f96057;
+    border-radius: 20px;
+    font-size: 15px;
+}

@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "app/protected/admin/dashboard/icons/ArIcon.jsx",
+    "app/protected/admin/dashboard/icons/DocIcon.jsx",
+    "app/protected/admin/dashboard/icons/GraphicDesignIcon.jsx",
+    "app/protected/admin/dashboard/icons/IllustrationIcon.jsx",
+    "app/protected/admin/dashboard/icons/PhotographyIcon.jsx",
+    "app/protected/admin/dashboard/icons/UpdatesIcon.jsx",
+    "app/protected/admin/dashboard/icons/UxIcon.jsx",
+    "app/protected/admin/dashboard/icons/VideosIcon.jsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

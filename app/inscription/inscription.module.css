@@ -1,0 +1,195 @@
+@charset "UTF-8";
+.mainContainer {
+  height: 99.9vh;
+  display: flex;
+  align-items: center;
+}
+.mainContainer .imageContainer {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainContainer .sectionImage {
+  width: 70%;
+}
+.mainContainer .sectionImage img {
+  height: auto;
+  width: 100%;
+}
+.mainContainer .formContainer {
+  width: 40%;
+  height: 100vh;
+  background-color: #fff;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.mainContainer .formContainer .containerTextLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainContainer .formContainer .containerTextLogo .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mainContainer .formContainer .containerTextLogo .text h1 {
+  font-size: 24px;
+}
+.mainContainer .formContainer .containerTextLogo .text h2 {
+  font-size: 18px;
+}
+.mainContainer .formContainer .champContainer {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer .formContainer .champContainer form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContainer .formContainer .champContainer form .labelAndInputContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer .formContainer .champContainer form .labelAndInputContainer label {
+  color: #000;
+  text-align: start;
+}
+.mainContainer .formContainer .champContainer form .labelAndInputContainer input {
+  width: 80%;
+  height: 40px;
+}
+.mainContainer .formContainer .champContainer form .labelAndInputContainer textarea {
+  width: 80%;
+  min-width: 80%;
+  max-width: 80%;
+  min-height: 95px;
+  height: 95px;
+  max-height: 105px;
+}
+.mainContainer .formContainer .champContainer form button {
+  padding: 10px 42px;
+  border-radius: 10px;
+  background-color: #42bf96;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  width: 80%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* SCSS for Alert component */
+.alertContainer {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: 100%;
+  max-width: 400px;
+  /* Ajustez la largeur selon vos besoins */
+}
+
+.alert {
+  margin-bottom: 10px;
+}
+
+/* Style pour les alertes de succès */
+.alert-success {
+  background-color: #4CAF50;
+  /* Couleur de fond pour le succès */
+  color: #fff;
+  /* Couleur du texte pour le succès */
+}
+
+/* Style pour les alertes d'erreur */
+.alert-error {
+  background-color: #f44336;
+  /* Couleur de fond pour l'erreur */
+  color: #fff;
+  /* Couleur du texte pour l'erreur */
+}
+
+.confetti {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.creationCompte {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.creationCompte h3 {
+  font-size: 15px;
+}
+
+.link {
+  margin-left: 10px;
+  color: #07c096;
+  text-decoration: none;
+}
+
+.anotherSignup {
+  width: 100%;
+}
+.anotherSignup .OrContainer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.anotherSignup .OrContainer .orLeft {
+  border: 1px solid grey;
+  width: 40%;
+}
+.anotherSignup .OrContainer .orRight {
+  border: 1px solid grey;
+  width: 40%;
+}
+.anotherSignup .providers {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles pour les appareils mobile dont la largeur de l'écran est inférieure ou égale à 767px */
+@media only screen and (max-width: 767px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .mainContainer .imageContainer {
+    display: none;
+  }
+  .mainContainer .formContainer {
+    width: 100%;
+  }
+}
+/* Styles pour les tablettes dont la largeur de l'écran est inférieure ou égale à 767px *//*# sourceMappingURL=inscription.module.css.map */

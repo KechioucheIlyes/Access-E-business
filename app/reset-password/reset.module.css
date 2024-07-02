@@ -1,0 +1,222 @@
+/* connexion.module.css */
+.customSection {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.container {
+  height: auto !important;
+}
+
+.leftHalf {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightHalf {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+.rightHalf .connexionCard {
+  height: 500px;
+  min-width: 40%;
+  min-width: 320px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rightHalf .connexionCard h1 {
+  color: black;
+  margin-top: 20px;
+  text-align: center;
+}
+.rightHalf .connexionCard h2 {
+  font-size: 18px;
+  text-align: center;
+}
+.rightHalf .connexionCard form {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.rightHalf .connexionCard form label {
+  color: black;
+  margin: 10px;
+}
+.rightHalf .connexionCard form input {
+  width: webkit-fill-available;
+  padding: 1em;
+  width: 80%;
+  margin: 0.2em;
+  border-radius: 0.6em;
+  border: none;
+  box-shadow: 0 0 2px 1px black;
+  transform: scale(0.95);
+}
+.rightHalf .connexionCard form textarea {
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 95px;
+  height: 95px;
+  max-height: 105px;
+}
+.rightHalf .connexionCard form button {
+  margin-top: 25px;
+  padding: 10px 42px;
+  border-radius: 10px;
+  background-color: #42bf96;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  width: 80%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.imageSection {
+  width: 70%;
+}
+.imageSection img {
+  height: auto;
+  width: 100%;
+}
+
+.leftHalfContainer {
+  width: 60%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.creationCompte {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.creationCompte h3 {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .leftHalfContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 70px;
+  }
+  .customSection {
+    flex-direction: column;
+  }
+  .customSection .leftHalf {
+    border-top-right-radius: 0vh;
+    border-bottom-right-radius: 0vh;
+    border-top-right-radius: 60vh;
+    border-top-left-radius: 60vh;
+    width: 90%;
+    height: 200px;
+    background-color: #18262f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .customSection .leftHalf .imageSection {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .customSection .leftHalf .imageSection img {
+    height: auto;
+    width: 50%;
+  }
+  .customSection .rightHalf {
+    justify-content: center;
+  }
+  .customSection .rightHalf .connexionCard {
+    width: 90%;
+    margin-right: 0px;
+    border-radius: 10px 10px 20px 20px;
+  }
+  .customSection .rightHalf .connexionCard h1 {
+    color: white;
+  }
+  .customSection .rightHalf .connexionCard form {
+    width: 100%;
+  }
+  .customSection .rightHalf .connexionCard form label {
+    color: white;
+    margin: 5px;
+  }
+  .customSection .rightHalf .connexionCard form input {
+    width: 80%;
+    height: 40px;
+  }
+  .customSection .rightHalf .connexionCard form button {
+    margin-top: 45px;
+    padding: 7px 39px;
+    border-radius: 20px;
+    background-color: #07c096;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+  }
+}
+.link {
+  margin-left: 10px;
+  color: #07c096;
+  text-decoration: none;
+}
+
+.anotherSignup {
+  width: 100%;
+}
+.anotherSignup .OrContainer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.anotherSignup .OrContainer .orLeft {
+  border: 1px solid grey;
+  width: 40%;
+}
+.anotherSignup .OrContainer .orRight {
+  border: 1px solid grey;
+  width: 40%;
+}
+.anotherSignup .providers {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=reset.module.css.map */

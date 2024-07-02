@@ -1,0 +1,209 @@
+.main {
+  background-color: #f0f2f5;
+  min-height: 90vh;
+  margin: 0;
+  padding: 0;
+}
+
+.questionnaireContainer h1 {
+  text-decoration: underline;
+  text-decoration-color: #14b497;
+  text-align: center;
+  margin-top: 30px;
+}
+.questionnaireContainer .questionsContainer {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 70vh;
+}
+.questionnaireContainer .titleAndQuestions {
+  width: 100%;
+  min-height: 70vh;
+}
+.questionnaireContainer .titleAndQuestions .question {
+  display: flex;
+  min-height: 60vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.questionnaireContainer .titleAndQuestions .question p {
+  font-size: 24px;
+}
+.questionnaireContainer .titleAndQuestions .question .btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.questionnaireContainer .titleAndQuestions .question .btns button {
+  padding: 12px 24px;
+  border-radius: 20px;
+  background-color: #14b497;
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.input {
+  outline: none;
+  width: 35%;
+  height: 50px;
+}
+
+.groupedRadio {
+  padding: 30px;
+  display: flex !important;
+  align-items: flex-end !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+}
+.groupedRadio .radio {
+  margin-left: 40px;
+}
+
+.inputDate {
+  width: 100%;
+  margin: 30px;
+}
+
+.dates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.questions {
+  color: #074035;
+  text-align: center;
+}
+
+.animate {
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.errorBtn {
+  background-color: red !important;
+  transition: background-color 0.5s ease;
+  /* Ajoute une transition de 0.5 seconde pour un changement en douceur */
+}
+
+.messageError p {
+  font-size: 10px !important;
+  color: red;
+}
+
+.normalBtn {
+  background-color: #14b497 !important;
+  transition: background-color 0.5s ease;
+}
+
+.test {
+  color: red;
+  font-size: 12px !important;
+  position: relative;
+  bottom: 20px;
+}
+
+.normalText {
+  color: #14b497 !important;
+  transition: background-color 0.4s ease;
+}
+
+.errorText {
+  color: red !important;
+  transition: background-color 0.4s ease;
+}
+
+.testing {
+  border: 1px solid black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .main {
+    min-height: auto;
+  }
+  .questionnaireContainer .questionsContainer {
+    margin: 0;
+    width: 100%;
+  }
+  .titleAndQuestions h1 {
+    font-size: 15px;
+  }
+  .titleAndQuestions .question .questions p {
+    font-size: 12px;
+  }
+  .titleAndQuestions .question .btns {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .titleAndQuestions .question .btns button {
+    padding: 8px 18px !important;
+    font-size: 12px !important;
+  }
+  .titleAndQuestions .input {
+    width: 90%;
+  }
+  .normalBtn {
+    font-size: 12px !important;
+  }
+  .errorBtn {
+    font-size: 12px !important;
+  }
+  .test {
+    font-size: 9px !important;
+  }
+  .groupedRadio {
+    padding: 20px;
+  }
+  .inputDate {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .sousQues {
+    font-size: 12px !important;
+    text-align: center;
+    width: 100%;
+  }
+  .groupedRadio {
+    padding: 0px;
+  }
+  .groupedRadio .radio {
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .groupedRadio .radioOui {
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .questionjsp {
+    border: 1px solid red;
+  }
+}/*# sourceMappingURL=questionnaire.module.css.map */

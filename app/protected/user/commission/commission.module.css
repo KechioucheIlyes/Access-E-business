@@ -1,0 +1,21 @@
+.tableContainer {
+  padding: 50px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tableContainer h1 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .tableContainer {
+    padding: 10px;
+  }
+  .tableContainer h1 {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=commission.module.css.map */

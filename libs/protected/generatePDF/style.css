@@ -1,0 +1,188 @@
+img {
+    height: 100px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.title {
+    text-align: center;
+}
+
+h1 {
+    color: #257a00;
+}
+
+.particuliere {
+    color: #01a038;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+.action-child-1 {
+    background-color: #01a038;
+    margin: 10px;
+    padding: 15px;
+}
+
+.action-child-1-1 {
+    background-color: #01a038;
+    margin: 10px;
+    padding: 15px;
+}
+
+.action-child {
+    list-style: decimal-leading-zero;
+}
+
+
+
+h2 {
+    text-align: center;
+    background-color: #01a038;
+    padding: 15px;
+}
+
+h3 {
+
+    background-color: #03772c;
+    padding: 10px;
+
+}
+
+.block-mission-etc {
+    margin: 20px;
+}
+
+.signature {
+
+    display: flex;
+
+
+}
+
+.signature img {
+    height: 50px;
+}
+
+.block-signature {
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 12px;
+    height: 250px;
+
+}
+
+.text-signature {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.compte {
+    text-decoration: solid;
+    color: #01a038;
+}
+
+.generale {
+    color: #00948f;
+}
+
+.title-2 {
+    color: black !important;
+}
+
+.generale-block {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.generale-block-child {
+    width: 48%;
+}
+
+.cpp-anexe {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-child-1 {
+    width: 50% !important;
+
+}
+
+.block-child-2 {
+    width: 50% !important;
+
+}
+
+#nom_societe {
+    font-weight: bold;
+}
+
+#forme_juridique {
+    font-weight: bold;
+}
+
+#ville {
+    font-weight: bold;
+}
+
+#siren {
+    font-weight: bold;
+}
+
+#adresse {
+    font-weight: bold;
+}
+
+#contact_signataire {
+    font-weight: bold;
+}
+
+.test {
+
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.info-access {
+
+    text-align: center;
+    color: #03772c;
+    font-weight: bold;
+
+}
+
+.title-prestations {
+    font-weight: bold;
+    color: #257a00;
+    font-size: 15px;
+    text-decoration: underline;
+    padding: 10px;
+
+}
+
+.mark {
+    color: #66dd33;
+}

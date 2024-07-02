@@ -1,0 +1,12 @@
+.information {
+  text-align: center;
+}
+.information h1 {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .information h1 {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=brouillon.module.css.map */

@@ -1,0 +1,83 @@
+.section {
+    background-color: #f0f2f5;
+    margin: 0;
+    min-height: 100vh !important;
+
+    h1 {
+        color: #1a2529;
+        font-size: 25px;
+    }
+}
+
+.champsP {
+
+    h1 {
+        text-align: center;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .descriptionChampsP {
+
+        width: 80%;
+
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}
+
+.inputs {
+
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+    .inputSection {
+
+        display: flex;
+        flex-direction: column;
+
+        .h4Section {
+
+            border: 1px solid red;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            h4 {
+                border: 1px solid red;
+
+            }
+        }
+    }
+}
+
+.btnSubmit {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width : 768px) {
+    .inputs {
+        height: auto;
+        flex-wrap: wrap;
+    }
+}
+
+.btnHover{
+    &:hover{
+        background-color: #26713a;
+    }
+}

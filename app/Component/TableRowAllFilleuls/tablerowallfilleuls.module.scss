@@ -1,0 +1,107 @@
+.pdf {
+    cursor: pointer;
+}
+
+.nopdf {
+    cursor: not-allowed;
+}
+
+.paye {
+    border: 1px solid green;
+    color: green;
+    border-radius: 20px;
+}
+
+.attente {
+    border: 1px solid #FF7F50;
+    color: #FF7F50;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .pagination__link {
+        font-size: 7px;
+    }
+
+    .pagination__linkActive {
+        padding: 0 !important;
+    }
+
+    .pagination__linkPage {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .td {
+        font-size: 5px;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+
+    .tr {
+        font-size: 10px;
+    }
+
+    .typo {
+        font-size: 10px;
+    }
+
+    .typoText {
+        font-size: 7px;
+    }
+
+
+    .btn button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .boolean {
+
+        img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .terminado {
+        padding: 0;
+        left: 0px;
+        border: none !important;
+        font-size: 5px;
+    }
+
+    .encours {
+        left: 0px;
+        padding: 0;
+        border: none !important;
+        font-size: 5px;
+    }
+
+    .perdue {
+        padding: 0;
+        left: 0px;
+        border: none !important;
+        font-size: 5px;
+    }
+
+    .headers {
+
+        font-size: 5px;
+    }
+
+
+}
+
+.bodyFilleul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    
+}

@@ -1,0 +1,20 @@
+.sd-row {
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.sd-body__page{
+
+    h4{
+
+        text-align: center;
+        width: 100%;
+    }
+    .sd-description{
+
+        width: 100%;
+        text-align: center;
+    }
+}

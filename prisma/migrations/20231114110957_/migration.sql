@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `User` MODIFY `siren` VARCHAR(100) NOT NULL;

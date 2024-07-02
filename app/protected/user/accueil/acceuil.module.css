@@ -1,0 +1,99 @@
+.main {
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  color: white;
+}
+.main .cardContainer {
+  min-height: 80vh;
+}
+.main .cardContainer .card {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .cardContainer .btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+.main .cardContainer .btns .btn {
+  font-family: "Nunito";
+  border: 1px solid #1a2529;
+  color: white;
+  background-color: #1a2529;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .cardContainer .btns .btn:hover {
+  background-color: #2e3d43;
+}
+
+.imageSection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.imageSection img {
+  width: 50%;
+  height: auto;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.textAccroche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.textAccroche h1 {
+  color: #1a2529;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .cardContainer .card .textAccroche {
+    flex-direction: column-reverse;
+  }
+  .cardContainer .card .textAccroche h1 {
+    font-size: 12px;
+  }
+  .cardContainer .card .textAccroche .text {
+    font-size: 12px;
+    width: 100%;
+  }
+  .cardContainer .card .textAccroche .imageSection img {
+    width: 50%;
+    height: auto;
+  }
+  .cardContainer .card .btns {
+    height: 20px;
+    position: relative;
+    top: 50px;
+  }
+  .cardContainer .card .btns .btn {
+    font-size: 10px;
+  }
+}
+.text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=acceuil.module.css.map */

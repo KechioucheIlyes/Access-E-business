@@ -1,0 +1,390 @@
+{
+    "categories": [
+        {
+            "categorie": "Analyse contractuelle",
+            "questions": [
+                {
+                    "question_numero": "1.1",
+                    "question": "Combien de compteurs d'électricité ou de gaz possédez-vous?",
+                    "sous_questions": [
+                        {
+                            "nom": "Nombre de compteur électricité",
+                            "type": "nombre"
+                        },
+                        {
+                            "nom": "Nombre de compteur gaz",
+                            "type": "nombre"
+                        }
+                    ]
+                },
+                {
+                    "question_numero": "1.2",
+                    "question": "Quelle est votre fournisseur actuel ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Fournisseur d'électricité",
+                            "type": "texte"
+                        },
+                        {
+                            "nom": "Fournisseur de gaz",
+                            "type": "texte"
+                        }
+                    ]
+                },
+                {
+                    "question_numero": "1.3",
+                    "question": "Connaissez-vous la date d'échéance de vos contrats d'énergie électricité et/ou gaz ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Echéance contrat d'électricité",
+                            "type": "date"
+                        },
+                        {
+                            "nom": "Echéance contrat gaz",
+                            "type": "date"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ]
+                },
+                {
+                    "question_numero": "1.4",
+                    "question": "Connaissez-vous le type de votre contrat que vous avez souscrit pour l'électricité ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Type de contrat",
+                            "type": "texte"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ]
+                },
+                {
+                    "question_numero": "1.5",
+                    "question": "Le choix de ce contrat a-t-il été défini en fonction de votre % de bandeau ARENH ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Oui",
+                            "type": "booléen"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ]
+                },
+                {
+                    "question_numero": "1.6",
+                    "question": "Anticipez-vous la date de la renégociation de votre contrat en fonction d'une veille marché quotidienne ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Oui",
+                            "type": "booléen"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ]
+                },
+                {
+                    "question_numero": "1.7",
+                    "question": "Le choix de la durée d'engagement de vos contrats est-il défini selon le prix de marché le jour du renouvellement ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Oui",
+                            "type": "booléen"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ]
+                },
+                {
+                    "question_numero": "1.8",
+                    "question": "Etes-vous accompagné et/ou conseillé par une tierce personne pour vos contrats d'énergies ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Oui",
+                            "type": "texte"
+                        },
+                        {
+                            "nom": "Qui",
+                            "type": "texte"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ]
+                }
+            ],
+            "reponse_eliminatoire": [
+                "1.6",
+                "1.7",
+                "1.8"
+            ],
+            "note_max": 6
+        },
+        {
+            "categorie": "Optimisation des taxes",
+            "questions": [
+                {
+                    "question_numero": "2.1",
+                    "question": "Connaisez-vous la puissance souscrite pour chacun de vos compteurs d'électricité ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Si Oui quelle combien de Kva",
+                            "type": "nombre"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ]
+                },
+                {
+                    "question_numero": "2.2",
+                    "question": "Connaissez-vous votre formule tarifaire d'acheminement ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Oui",
+                            "type": "booléen"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ]
+                },
+                {
+                    "question_numero": "2.3",
+                    "question": "Avez-vous déjà eu des pénalités de dépassements de puissance ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Oui",
+                            "type": "booléen"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ]
+                },
+                {
+                    "question_numero": "2.4",
+                    "question": "Vos factures d'électricité comportent-elles des lignes de surfacturation en lien avec la consommation d'énergie réactive?",
+                    "sous_questions": [
+                        {
+                            "nom": "Oui",
+                            "type": "booléen"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ]
+                },
+                {
+                    "question_numero": "2.5",
+                    "question": "Avez-vous déjà étudié la cohérence entre votre puissance souscrite et votre puissance soutirée ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Si Oui Est-ce périodique au moins tous les deux ans?",
+                            "type": "booléen"
+                        },
+                        {
+                            "nom": "Oui",
+                            "type": "booléen"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ],
+                    "condition_affichage": {
+                        "type": "condition",
+                        "condition": "((reponse[0] >= 5 && reponse[0] <= 39) && reponse[1] == true)",
+                        "message": "Secteur d'activité éligible au remboursement de la CSPE"
+                    }
+                },
+                {
+                    "question_numero": "2.6",
+                    "question": "Votre activité est éligible à un remboursement de la CSPE avez-vous déjà fait cette demande et bénéficiez-vous du taux réduit ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Oui",
+                            "type": "booléen"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ]
+                }
+            ],
+            "reponse_eliminatoire": [
+                "2.5"
+            ],
+            "note_max": 4
+        },
+        {
+            "categorie": "Économies d'énergie",
+            "questions": [
+                {
+                    "question_numero": "3.1",
+                    "question": "Êtes-vous sensible à la réduction de consommation ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Oui",
+                            "type": "booléen"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ]
+                },
+                {
+                    "question_numero": "3.2",
+                    "question": "Avez-vous récemment adopté des mesures visant à réduire votre consommation?",
+                    "sous_questions": [
+                        {
+                            "nom": "Si Oui lesquelles",
+                            "type": "texte"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ],
+                    "condition_affichage": {
+                        "type": "condition",
+                        "condition": "reponse[0] == true",
+                        "message": ""
+                    }
+                },
+                {
+                    "question_numero": "3.3",
+                    "question": "Pourriez-vous identifier des actions à entreprendre pour réduire votre consommation?",
+                    "sous_questions": [
+                        {
+                            "nom": "Si Oui lesquelles",
+                            "type": "texte"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ],
+                    "condition_affichage": {
+                        "type": "condition",
+                        "condition": "reponse[0] == true",
+                        "message": ""
+                    }
+                },
+                {
+                    "question_numero": "3.4",
+                    "question": "Êtes-vous muni de moyens de mesure permettant de quantifier la consommation par équipement (chauffage, éclairage, ventilation, production, etc.)?",
+                    "sous_questions": [
+                        {
+                            "nom": "Oui",
+                            "type": "booléen"
+                        },
+                        {
+                            "nom": "Non",
+                            "type": "booléen"
+                        }
+                    ],
+                    "condition_affichage": {
+                        "type": "condition",
+                        "condition": "reponse[0] == true",
+                        "message": ""
+                    }
+                }
+            ],
+            "reponse_eliminatoire": [
+                "3.1"
+            ],
+            "note_max": 3,
+            "note_si_oui_3.1": 3
+        },
+        {
+            "categorie": "Réglementaire",
+            "questions": [
+                {
+                    "question_numero": "4.1",
+                    "question": "Êtes-vous assujetti au décret tertiaire ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Si Oui",
+                            "type": "condition",
+                            "condition": "reponse[0] == true",
+                            "message": "Avez-vous répondu à votre première obligation déclarative sur la plate-forme OPERATE ?",
+                            "sous_questions": [
+                                {
+                                    "nom": "Oui",
+                                    "type": "booléen"
+                                },
+                                {
+                                    "nom": "Non",
+                                    "type": "booléen"
+                                }
+                            ]
+                        },
+                        {
+                            "nom": "Êtes-vous accompagné d'un tiers pour la seconde obligation d'atteindre les objectifs (-40% d'ici 2030)",
+                            "type": "booléen"
+                        },
+                        {
+                            "nom": "Je ne sais pas",
+                            "type": "booléen"
+                        }
+                    ],
+                    "condition_affichage": {
+                        "type": "condition",
+                        "condition": "reponse[0] == true",
+                        "message": "Vous êtes soumis au décret tertiaire"
+                    }
+                },
+                {
+                    "question_numero": "4.2",
+                    "question": "Êtes-vous assujetti au décret BACS ?",
+                    "sous_questions": [
+                        {
+                            "nom": "Si Oui",
+                            "type": "condition",
+                            "condition": "reponse[0] == true",
+                            "message": "Êtes-vous équipé d'une GTB (Gestion technique du Bâtiment)",
+                            "sous_questions": [
+                                {
+                                    "nom": "Oui",
+                                    "type": "booléen"
+                                },
+                                {
+                                    "nom": "Non",
+                                    "type": "booléen"
+                                },
+                                {
+                                    "nom": "Je ne sais pas",
+                                    "type": "booléen"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "reponse_eliminatoire": [
+                "4.1.1 || 4.1.2",
+                "4.2"
+            ],
+            "note_max": 3,
+            "note_si_oui_3.1": 3
+        }
+    ]
+}

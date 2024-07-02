@@ -1,0 +1,11 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .tabs {
+    display: none;
+  }
+}/*# sourceMappingURL=TabsCategorie.module.css.map */
