@@ -103,7 +103,7 @@ const Connexion = () => {
                 <div className={styles.leftHalfContainer}>
                     <div className={styles.leftHalf}>
                         <div className={styles.imageSection}>
-                            <Image src={connexionImage} height={300} width={300} alt='image-Access-OptiScore-connexion' priority />
+                            <Image src={connexionImage} height={300} width={300} alt='Access-OptiScore-connexion' priority />
                         </div>
 
                     </div>
